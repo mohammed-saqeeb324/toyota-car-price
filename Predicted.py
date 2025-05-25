@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import joblib
 
-model=pd.read_csv("ToyotaCorolla-MLR.csv")
+model=pd.read_csv("Toyota.csv")
 
 
 st.title("Toyota Car Price Predictor 🚗")
