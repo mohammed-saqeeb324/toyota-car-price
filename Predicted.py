@@ -26,7 +26,7 @@ doors = st.selectbox("Number of Doors", [2, 3, 4, 5])
 gears = st.selectbox("Number of Gears", [3, 4, 5, 6])
 
 # Predict button
-if st.button("Predict Price"):
-    features = np.array([[age, km, hp, cc, weight, fuel_encoded, automatic_encoded, doors, gears]])
-    prediction = model.predict(features)[0]
-    st.success(f"Estimated Price of Toyota Car: €{prediction:,.2f}")
+st.button("Predict Price"):
+features = np.array([[age, km, hp, cc, weight, fuel_encoded, automatic_encoded, doors, gears]])
+prediction = model.predict(features)[0]
+st.success(f"Estimated Price of Toyota Car: €{prediction:,.2f}")
